@@ -16,6 +16,7 @@ def test_login(page,user):
         logging.info("Attempting Login")
         login_page.login(user["username"],user["password"])
         expect(page).to_have_url('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
+        page.wait_for_timeout(3000)
         page.screenshot(path="screenshots/login_success.png",full_page = True)
         logging.info("Login Successfull")
     except Exception as e:

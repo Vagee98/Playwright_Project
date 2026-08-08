@@ -31,4 +31,5 @@ def test_add_emplyee_details(page):
         page.screenshot("screenshots/add_emploee_failed.png",full_page=True)
         print("Exception is",e)
         logging.error("Adding employee details failed")
+        raise
 
