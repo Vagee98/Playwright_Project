@@ -44,6 +44,8 @@ HTML reports are generated using pytest-html.
 Screenshots are captured during test execution for validation and debugging purposes.
 
 ## Project Structure
+
+```text
 Playwright_Project/
 │
 ├── data/
@@ -67,7 +69,7 @@ Playwright_Project/
 │
 ├── conftest.py
 └── README.md
-
+```
 ## Test Scenarios Automated
 ### Login
 - Valid Login
